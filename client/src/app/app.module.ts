@@ -1,3 +1,4 @@
+import { Project } from './models/project';
 // modules
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -21,6 +22,11 @@ import { ContactDetailsComponent } from './contacts/contact-details/contact-deta
 import { ContactDeleteComponent } from './contacts/contact-delete/contact-delete.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { LoginComponent } from './pages/login/login.component';
+
+import { ProjectsComponent } from './pages/projects/projects.component';
+import { ProjectListComponent } from './projects/project-list/project-list.component';
+import { ProjectDetailsComponent } from './projects/project-details/project-details.component';
+import { ProjectDeleteComponent } from './projects/project-delete/project-delete.component';
 
 // services
 import { FlashMessagesModule, FlashMessagesService } from 'angular2-flash-messages';
@@ -50,7 +56,12 @@ export function jwtTokenGetter() {
     ContactDetailsComponent,
     ContactDeleteComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    ProjectsComponent,
+    ProjectListComponent,
+    ProjectDetailsComponent,
+    ProjectDeleteComponent
+
   ],
   imports: [
     BrowserModule,

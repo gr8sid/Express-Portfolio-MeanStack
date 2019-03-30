@@ -1,5 +1,5 @@
 {
-  "name": "comp308-w2019-lesson9a",
+  "name": "express-portfolio-sidharthchoudhary-meanstack",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -50,5 +50,13 @@
     "@types/passport-jwt": "^3.0.1",
     "@types/passport-local": "^1.0.33",
     "@types/passport-local-mongoose": "^4.0.12"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gr8sid/Express-Portfolio-MeanStack"
+  },
+  "bugs": {
+    "url": "https://github.com/gr8sid/Express-Portfolio-MeanStack/issues"
+  },
+  "homepage": "https://github.com/gr8sid/Express-Portfolio-MeanStack#readme"
 }

@@ -1,0 +1,40 @@
+<!-- Content for the Edit Page -->
+<div class="container">
+  <div class="row">
+      <div class="col-md-offset-3 col-md-6">
+          <h1>{{ title }}</h1>
+
+          <form class="form" (submit)="onProjectDetailsSubmit()">
+
+              <div class="form-group">
+                  <label for="ProjectNameTextField">Project Name</label>
+                  <input type="text" class="form-control"
+                  id="ProjectNameTextField"
+                  placeholder="Enter Project Name"
+                  name="projectName"
+                  [(ngModel)]="project.name"
+                  value="{{ project.name }}"
+                  required>
+              </div>
+
+              <div class="form-group">
+                  <label for="DescriptionTextField">Project Description</label>
+                  <input type="text" class="form-control"
+                  id="DescriptionTextField"
+                  placeholder="Enter Project Description"
+                  name="description"
+                  [(ngModel)]="project.description"
+                  value="{{ project.description }}"
+                  required>
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+              <i class="fas fa-edit"></i> {{ title }}</button>
+              <a routerLink="/projects/project-list" class="btn btn-warning">
+                  <i class="fas fa-undo"></i> Cancel</a>
+          </form>
+
+
+      </div>
+  </div>
+</div>

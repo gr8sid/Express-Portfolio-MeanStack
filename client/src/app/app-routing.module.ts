@@ -1,3 +1,8 @@
+import { ProjectsComponent } from './pages/projects/projects.component';
+import { ProjectListComponent } from './projects/project-list/project-list.component';
+import { ProjectDetailsComponent } from './projects/project-details/project-details.component';
+import { ProjectDeleteComponent } from './projects/project-delete/project-delete.component';
+
 // modules
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -22,6 +27,12 @@ const routes: Routes = [
   {path: 'products', component: ProductsComponent, data: {title: 'Products'}},
   {path: 'services', component: ServicesComponent, data: {title: 'Services'}},
   {path: 'contact', component: ContactComponent, data: {title: 'Contact'}},
+
+  {path: 'projects', component: ProjectsComponent, data: {title: 'Projects'}},
+  {path: 'projects/project-list', component: ProjectListComponent, data: {title: 'Project List'}, canActivate: [AuthGuard]},
+  {path: 'projects/project-list/add', component: ProjectDetailsComponent, data: {title: 'Add Project'}, canActivate: [AuthGuard]},
+  {path: 'projects/project-list/edit/:id', component: ProjectDetailsComponent, data: {title: 'Edit Project'}, canActivate: [AuthGuard]},
+  {path: 'projects/project-list/delete/:id', component: ProjectDeleteComponent, data: {title: 'Delete Project'}, canActivate: [AuthGuard]},
 
   {path: 'contact/contact-list', component: ContactListComponent, data: {title: 'Contact List'}, canActivate: [AuthGuard]},
   {path: 'contact/contact-list/add', component: ContactDetailsComponent, data: {title: 'Add Contact'}, canActivate: [AuthGuard]},

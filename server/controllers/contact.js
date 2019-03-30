@@ -11,7 +11,7 @@ module.exports.displayContactList = (req, res, next) =>{
             return console.error(err);
         }
         else {
-            res.json({success: true, contactList: contactList, user: req.user});
+            res.json({success: true,msg: "contact list displayed successfully", contactList: contactList, user: req.user});
         }
     });
 }
