@@ -23,8 +23,8 @@ module.exports.displayAddPage = (req, res, next) => {
 module.exports.processAddPage = (req, res, next) => {
 
     let newProject = projectModel({
-        "projectName": req.body.name,
-        "lastName": req.body.description
+        "name": req.body.name,
+        "description": req.body.description
     });
 
     projectModel.create(newProject, (err, projectModel) => {
@@ -58,7 +58,7 @@ module.exports.processEditPage = (req, res, next) => {
 
     let updatedProject = projectModel({
         "_id": id,
-        "projectName": req.body.name,
+        "name": req.body.name,
         "description": req.body.description
     });
 

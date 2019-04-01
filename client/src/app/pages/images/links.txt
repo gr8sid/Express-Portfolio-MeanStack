@@ -1,0 +1,24 @@
+https://www.packtpub.com/
+
+https://getbootstrap.com/
+
+icons:
+https://fontawesome.com/icons?d=gallery
+
+mongodb download:
+https://www.mongodb.com/download-center/community
+select custom install - NOT the complate
+uncheck - mongodb as a service
+uncheck - mongodb compass
+
+
+create folder:
+C: -> data -> db
+
+mongodb hosted online is -> mLab:
+https://mlab.com/
+test locally on mongoDB, and on server on mLab
+
+mlab docs:
+https://docs.mlab.com/
+

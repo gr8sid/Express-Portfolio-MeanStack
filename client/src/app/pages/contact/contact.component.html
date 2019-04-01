@@ -1,14 +1,112 @@
 <app-base-page></app-base-page>
 <div *ngIf="isLoggedIn()" class="container">
-  <div class="row">
-    <div class="col col-md-6">
-      <div class="card">
-        <h5 class="card-header alert-success">Secure</h5>
-        <div class="card-body">
-          <a routerLink="contact-list" class="btn btn-primary"><i class="fas fa-users fa-lg"></i> Contact List</a>
+  <!--
+Name: Sidharth Choudhary
+Student ID: 300990285
+Date: 16 Feb, 2019
+-->
+
+    <head>
+
+        <style>
+          label{
+            text-shadow: 1px 1px 0.5px black;
+          }
+
+.bordered {
+    padding: 20px;
+    border: 1px solid rgb(209, 204, 204);
+    border-radius: 8px;
+    text-shadow: 1px 1px 0.5px black;
+  }
+
+            /* Style inputs with type="text", select elements and textareas */
+            input[type=text], select, textarea {
+              width: 100%; /* Full width */
+              padding: 12px; /* Some padding */
+              border: 1px solid #ccc; /* Gray border */
+              border-radius: 4px; /* Rounded borders */
+              box-sizing: border-box; /* Make sure that padding and width stays in place */
+              margin-top: 6px; /* Add a top margin */
+              margin-bottom: 16px; /* Bottom margin */
+              resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+            }
+
+            /* Style the submit button with a specific background color etc */
+            input[type=submit] {
+              background-color: #4CAF50;
+              color: white;
+              padding: 12px 20px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+            }
+
+
+            /* Add a background color and some padding around the form */
+            .container {
+              border-radius: 15px;
+              background-color: #f2f2f2;
+              padding: 20px;
+            }
+            </style>
+
+    </head>
+
+
+      <h1 style="color: #CEF0D4; font-family: 'courier', cursive; font-size: 60px; font-weight: normal; line-height: 48px; margin-top:10px; text-align: center; text-shadow: 1px 1px 2px black;"><strong>Contact Me</strong></h1>
+        <br>
+
+        <div class="container bordered" style="width:1000px; height:900px;">
+
+       <!-- A panel with my Contact information -->
+
+        <div  style="float:left; width:40%">
+          <div class="bordered" style="font-size:20px; background-color: #CEF0D4" >SIDHARTH CHOUDHARY</div>
+          <div  class="bordered" style="font-size:20px; background-color: white">
+          <p >
+          <strong>Email:</strong> gr8sid7981@gmail.com<br><br>
+          <strong>Call:</strong> +1(289)-242-3227<br>
+          </p>
+
+          <div style="margin-left: 15%; ">
+           <a routerLink="contact-list" class="btn btn-primary" style="font-size: 20px"><i class="fas fa-users fa-lg"></i> View My Contact List</a>
+          <br>
+
+        </div></div>
+
         </div>
-      </div>
+
+
+     <!-- Contact Form -->
+      <form action="\" style="float:right; width:35%">
+    <div style="font-size:15px; font-size: 18px">
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your First name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="contact">Contact Number</label>
+        <input type="text" id="contact" name="contactNum" placeholder="Your Contact Number..">
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">India</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+
+         <label for="email">Email Address</label>
+        <input type="text" id="emailAdd" name="emailAdd" placeholder="Your Email ID...">
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+
     </div>
-  </div>
-</div>
+      </form>
+    </div>
 
