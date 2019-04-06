@@ -23,7 +23,7 @@ import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent, data: {title: 'Home'}},
-  {path: 'about', component: AboutComponent, data: {title: 'About'}},
+  {path: 'about', component: AboutComponent, data: {title: 'About'}, canActivate: [AuthGuard]},
   {path: 'products', component: ProductsComponent, data: {title: 'Products'}},
   {path: 'services', component: ServicesComponent, data: {title: 'Services'}},
   {path: 'contact', component: ContactComponent, data: {title: 'Contact'}},
@@ -32,6 +32,7 @@ const routes: Routes = [
   {path: 'projects/project-list', component: ProjectListComponent, data: {title: 'Project List'}, canActivate: [AuthGuard]},
   {path: 'projects/project-list/add', component: ProjectDetailsComponent, data: {title: 'Add Project'}, canActivate: [AuthGuard]},
   {path: 'projects/project-list/edit/:id', component: ProjectDetailsComponent, data: {title: 'Edit Project'}, canActivate: [AuthGuard]},
+  {path: 'projects/project-list/details/:id', component: ProjectDetailsComponent, data: {title: 'Project Details'}, canActivate: [AuthGuard]},
   {path: 'projects/project-list/delete/:id', component: ProjectDeleteComponent, data: {title: 'Delete Project'}, canActivate: [AuthGuard]},
 
   {path: 'contact/contact-list', component: ContactListComponent, data: {title: 'Contact List'}, canActivate: [AuthGuard]},

@@ -21,14 +21,15 @@
                       <td class="text-center">{{project.name}}</td>
                       <td class="text-center">{{project.description}}</td>
 
-                      <td class="text-center" style="width:100px">
+                      <td  class="text-center" style="width:100px">
                       <a routerLink="edit/{{project._id}}" class="btn btn-primary">
                         <i class="fas fa-pencil-alt"></i> Edit</a>
                       </td>
 
+                      
                       <td class="text-center" style="width:150px">
                               <a routerLink="delete/{{project._id}}" (click)="onDeleteClick()"
-                                  class="btn btn-danger"><i class="fas fa-trash-alt"></i> Delete</a>
+                              class="btn btn-danger" ><i class="fas fa-trash-alt"></i> Delete</a>
                               </td>
 
                               <td class="text-center" style="width:160px">

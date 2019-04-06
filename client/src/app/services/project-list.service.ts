@@ -56,6 +56,12 @@ export class ProjectListService {
     return this.http.post<any>(this.endpoint + 'edit/' + project._id, project, this.httpOptions);
   }
 
+  public projectDetails(project: Project): Observable<any> {
+    this.loadToken();
+    this.httpOptions.headers = this.httpOptions.headers.set('Authorization', this.authToken);
+    return this.http.post<any>(this.endpoint + 'details/' + project._id, project, this.httpOptions);
+  }
+
   public deleteProject(project: Project): Observable<any> {
     this.loadToken();
     this.httpOptions.headers = this.httpOptions.headers.set('Authorization', this.authToken);

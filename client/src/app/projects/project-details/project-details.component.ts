@@ -31,7 +31,7 @@ export class ProjectDetailsComponent implements OnInit {
       this.project._id = params.id;
     });
 
-    if (this.title === 'Edit Project') {
+    if (this.title === 'Edit Project' || this.title === 'Project Details' ) {
       this.getProject(this.project);
     }
 
@@ -62,7 +62,18 @@ export class ProjectDetailsComponent implements OnInit {
             this.flashMessage.show(data.msg, {cssClass: 'alert-success', timeOut: 3000});
             this.router.navigate(['/projects/project-list']);
           } else {
-            this.flashMessage.show('Edit Contact Failed', {cssClass: 'alert-danger', timeOut: 3000});
+            this.flashMessage.show('Edit Project Failed', {cssClass: 'alert-danger', timeOut: 3000});
+            this.router.navigate(['/projects/project-list']);
+          }
+        });
+        break;
+        case 'Project Details':
+        this.projectListService.projectDetails(this.project).subscribe(data => {
+          if (data.success) {
+            this.flashMessage.show(data.msg, {cssClass: 'alert-success', timeOut: 3000});
+            this.router.navigate(['/projects/project-list']);
+          } else {
+            this.flashMessage.show('Project Details Failed', {cssClass: 'alert-danger', timeOut: 3000});
             this.router.navigate(['/projects/project-list']);
           }
         });
