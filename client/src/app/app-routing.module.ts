@@ -32,6 +32,7 @@ const routes: Routes = [
   {path: 'projects/project-list', component: ProjectListComponent, data: {title: 'Project List'}, canActivate: [AuthGuard]},
   {path: 'projects/project-list/add', component: ProjectDetailsComponent, data: {title: 'Add Project'}, canActivate: [AuthGuard]},
   {path: 'projects/project-list/edit/:id', component: ProjectDetailsComponent, data: {title: 'Edit Project'}, canActivate: [AuthGuard]},
+// tslint:disable-next-line: max-line-length
   {path: 'projects/project-list/details/:id', component: ProjectDetailsComponent, data: {title: 'Project Details'}, canActivate: [AuthGuard]},
   {path: 'projects/project-list/delete/:id', component: ProjectDeleteComponent, data: {title: 'Delete Project'}, canActivate: [AuthGuard]},
 

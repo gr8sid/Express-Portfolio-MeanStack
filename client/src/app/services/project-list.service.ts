@@ -18,7 +18,9 @@ export class ProjectListService {
 
   //private endpoint = 'https://comp308-w2019-lesson10a.herokuapp.com/api/contact-list/';
 
-  private endpoint = 'http://localhost:3000/api/project-list/';
+  //private endpoint = 'http://localhost:3000/api/project-list/';
+
+  private endpoint = 'https://expres-portfolio-meanstack-sid.herokuapp.com/api/project-list/';
 
   private httpOptions = {
     headers: new HttpHeaders({
