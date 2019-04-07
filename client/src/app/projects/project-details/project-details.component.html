@@ -17,7 +17,7 @@
                     value="{{ project.name }}"
                     required>
                 </div>
-  
+
                 <div class="form-group">
                     <label for="DescriptionTextField">Project Description</label>
                     <input type="text" class="form-control"
@@ -28,50 +28,51 @@
                     value="{{ project.description }}"
                     required>
                 </div>
-  
+
                 <button type="submit" class="btn btn-primary">
                 <i class="fas fa-edit"></i> {{ title }}</button>
                 <a routerLink="/projects/project-list" class="btn btn-warning">
                     <i class="fas fa-undo"></i> Cancel</a>
             </form>
     </div>
-    
+
 
 <div *ngIf="title == 'Project Details'">
+        <a routerLink="/projects/project-list" class="btn btn-warning" style="float:left; margin-top:10px; font-size:25px">
+            <i class="fas fa-undo"></i> GO BACK</a>
             <h1 style="color: #F08080; font-family: 'courier', cursive; font-size: 60px; font-weight: bold; width:1000px; text-align: center; text-shadow: 1px 1px 2px black;" > {{ project.name }}'s Details:
             </h1>
             <h2 style="color: #F08080; font-family: 'courier', cursive; font-size: 20px; font-weight: bold;width:1000px;"> {{ project.description }}</h2>
-            <a routerLink="/projects/project-list" class="btn btn-warning" style="float:right;">
-            <i class="fas fa-undo"></i> GO BACK</a>
-                     
+
+
             <div *ngIf=" project.name == 'EmailTracking-API'">
                     <h1 style="color: #CEF0D4; font-family: 'courier', cursive; font-size: 60px; font-weight: bold; width:1000px; text-align: center; text-shadow: 1px 1px 2px black;">
                             Samples of Email-Tracking API
                       </h1>
                          <div>
-                             <img 
-                                 src="assets/images/Emai1.JPG" 
+                             <img
+                                 src="assets/images/Emai1.JPG"
                                  alt="no img found"
                                  height="550px"
                                  style="border:5px solid black; margin-left:5%"
                                  ALIGN="center"
-                                 width="1000px" 
+                                 width="1000px"
                               /><br>
-                              <img 
-                                 src="assets/images/Email2.JPG" 
+                              <img
+                                 src="assets/images/Email2.JPG"
                                  alt="no img found"
                                  height="550px"
                                  style="border:5px solid black; margin-left:5%; margin-top:5%"
                                  ALIGN="center"
-                                 width="1000px" 
+                                 width="1000px"
                               /><br>
-                              <img 
-                                 src="assets/images/Email3.JPG" 
+                              <img
+                                 src="assets/images/Email3.JPG"
                                  alt="no img found"
                                  height="550px"
                                  style="border:5px solid black; margin-left:5%; margin-top:5%"
                                  ALIGN="center"
-                                 width="1000px" 
+                                 width="1000px"
                               />
                          </div>
             </div>
@@ -82,18 +83,18 @@
                                 Samples of TTCPay Mobile App
                           </h1>
                           <div>
-                            <img 
-                                src="assets/images/ttc1.PNG" 
+                            <img
+                                src="assets/images/ttc1.PNG"
                                 alt="no img found"
                                 height="500px"
                                 style="border:5px solid black; margin-left:35%"
                                 ALIGN="center"
                                 width="800px"
                                 />
-                                <div style="margin-top:5%; width:1400px"> 
+                                <div style="margin-top:5%; width:1400px">
                                     <div style="width:40%; float:left">
-                                <img 
-                                src="assets/images/ttc2.PNG" 
+                                <img
+                                src="assets/images/ttc2.PNG"
                                 alt="no img found"
                                 height="500px"
                                 style="border:5px solid black; margin-left:5%; margin-top:5%"
@@ -103,8 +104,8 @@
                                     </div>
                                     TYPEE TEXT HERE
                                     <div style="width:40%; float:right">
-                                <img 
-                                src="assets/images/ttc3.PNG" 
+                                <img
+                                src="assets/images/ttc3.PNG"
                                 alt="no img found"
                                 height="500px"
                                 style="border:5px solid black; margin-left:5%; margin-top:5%"
@@ -113,8 +114,8 @@
                                 />
                                     </div>
                                 </div>
-                                <img 
-                                src="assets/images/ttc4.PNG" 
+                                <img
+                                src="assets/images/ttc4.PNG"
                                 alt="no img found"
                                 height="100%"
                                 style="border:5px solid black; margin-left:65%; margin-top:5%"
@@ -129,45 +130,45 @@
                                     Samples of IRCTCcatering Web App
                               </h1>
                             <div>
-                                    <img 
-                                        src="assets/images/irctc3.png" 
+                                    <img
+                                        src="assets/images/irctc3.png"
                                         alt="no img found"
                                         height="500px"
                                         style="border:5px solid black; margin-left:5%; margin-top:5%"
                                         ALIGN="center"
-                                        width="1100px" 
+                                        width="1100px"
                                      />
-                                     <img 
-                                     src="assets/images/irctc4.png" 
+                                     <img
+                                     src="assets/images/irctc4.png"
                                      alt="no img found"
                                      height="500px"
                                      style="border:5px solid black; margin-left:5%; margin-top:5%"
                                      ALIGN="center"
-                                     width="1100px" 
+                                     width="1100px"
                                   />
-                                  <img 
-                                  src="assets/images/irctc2.png" 
+                                  <img
+                                  src="assets/images/irctc2.png"
                                   alt="no img found"
                                   height="500px"
                                   style="border:5px solid black; margin-left:5%; margin-top:5%"
                                   ALIGN="center"
-                                  width="1100px" 
+                                  width="1100px"
                                />
-                               <img 
-                               src="assets/images/irctc1.png" 
+                               <img
+                               src="assets/images/irctc1.png"
                                alt="no img found"
                                height="500px"
                                style="border:5px solid black; margin-left:5%; margin-top:5%"
                                ALIGN="center"
-                               width="1100px" 
+                               width="1100px"
                             />
-                            <img 
-                            src="assets/images/irctc5.png" 
+                            <img
+                            src="assets/images/irctc5.png"
                             alt="no img found"
                             height="500px"
                             style="border:5px solid black; margin-left:5%; margin-top:5%"
                             ALIGN="center"
-                            width="1100px" 
+                            width="1100px"
                          />
                                 </div>
                       </div>
